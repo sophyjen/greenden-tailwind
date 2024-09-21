@@ -13,7 +13,7 @@
      <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class="text-2xl font-bold">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 md:hidden" viewBox="0 0 20 20" fill="currentColor">
             <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd" />
           </svg>
           
@@ -32,6 +32,18 @@
             </li>
         </ul>
     </nav>  
+
+    <!--Side Bar-->
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li><a class="hover:underline hover:text-black" href="./index.htm">Home</a></li>
+            <li><a class="hover:underline hover:text-black" href="./products.htm">Products</a></li>
+            <li><a class="hover:underline hover:text-black" href="./contacts.htm">Contact</a></li>
+        </ul>
+    </section>
 
     <!--Contact Form-->
     <section class="bg-white dark:bg-gray-900">
@@ -67,5 +79,7 @@
             <p class="mt-5">@ 2024 Greenday.com</p>
         </div>     
     </section>
+
+    <script src="contact.js"></script>
 </body>
 </html>
